@@ -1,0 +1,39 @@
+[versions]
+agp = "9.1.0"
+appcompat = "1.7.1"
+barcodeScanning = "17.3.0"
+camera = "1.6.1"
+cardview = "1.0.0"
+constraintlayout = "2.2.1"
+glide = "5.0.7"
+gradle = "9.1.0"
+lifecycleRuntime = "2.10.0"
+loggingInterceptor = "5.4.0"
+material = "1.14.0"
+recyclerview = "1.4.0"
+retrofit2 = "3.0.0"
+room = "2.8.4"
+
+[libraries]
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+androidx-camera-camera2 = { group = "androidx.camera", name = "camera-camera2", version.ref = "camera" }
+androidx-camera-core = { group = "androidx.camera", name = "camera-core", version.ref = "camera" }
+androidx-camera-lifecycle = { group = "androidx.camera", name = "camera-lifecycle", version.ref = "camera" }
+androidx-camera-view = { group = "androidx.camera", name = "camera-view", version.ref = "camera" }
+androidx-cardview = { group = "androidx.cardview", name = "cardview", version.ref = "cardview" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-lifecycle-runtime = { group = "androidx.lifecycle", name = "lifecycle-runtime", version.ref = "lifecycleRuntime" }
+androidx-recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" }
+androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+barcode-scanning = { group = "com.google.mlkit", name = "barcode-scanning", version.ref = "barcodeScanning" }
+compiler = { group = "com.github.bumptech.glide", name = "compiler", version.ref = "glide" }
+converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit2" }
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+gradle = { group = "com.android.tools.build", name = "gradle", version.ref = "gradle" }
+logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "loggingInterceptor" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit2" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }

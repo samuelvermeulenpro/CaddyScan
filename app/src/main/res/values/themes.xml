@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.BarcodeScanner" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+
+    <!-- Theme for the Toolbar to color the back arrow and menu icons -->
+    <style name="ToolbarTheme" parent="ThemeOverlay.MaterialComponents.ActionBar">
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+
+    <!-- Theme for the overflow menu popup -->
+    <style name="ToolbarPopupTheme" parent="ThemeOverlay.MaterialComponents.Light" />
+
+    <!-- Section label in About cards -->
+    <style name="SectionLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:layout_marginBottom">12dp</item>
+    </style>
+
+    <!-- Library row container -->
+    <style name="LibRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingVertical">10dp</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <!-- Library row inner text container -->
+    <style name="LibRowInner">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Library name text -->
+    <style name="LibName">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Library description text -->
+    <style name="LibDesc">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:layout_marginTop">2dp</item>
+    </style>
+
+    <!-- Arrow icon in library row -->
+    <style name="LibArrow">
+        <item name="android:layout_width">16dp</item>
+        <item name="android:layout_height">16dp</item>
+        <item name="android:src">@drawable/ic_chevron_right</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:tint">@color/text_secondary</item>
+    </style>
+
+    <!-- Divider between rows -->
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#F0F0F0</item>
+    </style>
+</resources>

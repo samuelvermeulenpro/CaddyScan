@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary"
+            android:theme="@style/ToolbarTheme"
+            app:titleTextColor="@android:color/white" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- ══ HEADER ══ -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/primary"
+                android:paddingTop="32dp"
+                android:paddingBottom="32dp"
+                android:paddingHorizontal="24dp">
+
+                <ImageView
+                    android:layout_width="108dp"
+                    android:layout_height="108dp"
+                    android:src="@drawable/logo_svpro"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="@string/logo_svpro" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/app_name"
+                    android:textColor="#FFFFFF"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text=""
+                    android:textColor="#B3FFFFFF"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="14dp"
+                    android:background="#4DFFFFFF" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/samuel_vermeulen_svpro"
+                    android:textColor="#DDFFFFFF"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/consultant_informatique_amp_internet"
+                    android:textColor="#80FFFFFF"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <!-- ══ CONTENT ══ -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- ── LICENCE ── -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            style="@style/SectionLabel"
+                            android:text="@string/licence" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginBottom="12dp">
+
+                            <ImageView
+                                android:layout_width="28dp"
+                                android:layout_height="28dp"
+                                android:src="@drawable/ic_licence"
+                                app:tint="@color/primary"
+                                android:layout_marginEnd="14dp" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/gnu_affero_general_public_license_v3_0"
+                                    android:textColor="@color/text_primary"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp"
+                                    android:text="@string/comment_licence"
+                                    android:textColor="@color/text_secondary"
+                                    android:textSize="12sp"
+                                    android:lineSpacingMultiplier="1.4" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnLicence"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:text="@string/consulter_la_licence"
+                            android:textSize="13sp"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                            app:strokeColor="@color/primary"
+                            android:textColor="@color/primary" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- ── BIBLIOTHÈQUES ── -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            style="@style/SectionLabel"
+                            android:text="@string/biblioth_ques_open_source" />
+
+                        <!-- Open Food Facts -->
+                        <LinearLayout android:id="@+id/btnOpenFoodFacts" style="@style/LibRow">
+                            <LinearLayout style="@style/LibRowInner">
+                                <TextView style="@style/LibName" android:text="@string/open_food_facts_api" />
+                                <TextView style="@style/LibDesc" android:text="@string/base_de_donn_es_collaborative_de_produits_alimentaires_odbl" />
+                            </LinearLayout>
+                            <ImageView style="@style/LibArrow" />
+                        </LinearLayout>
+                        <View style="@style/Divider"/>
+
+                        <!-- CameraX -->
+                        <LinearLayout android:id="@+id/btnCameraX" style="@style/LibRow">
+                            <LinearLayout style="@style/LibRowInner">
+                                <TextView style="@style/LibName" android:text="@string/androidx_camerax" />
+                                <TextView style="@style/LibDesc" android:text="Accès caméra et aperçu temps réel — Apache 2.0" />
+                            </LinearLayout>
+                            <ImageView style="@style/LibArrow" />
+                        </LinearLayout>
+                        <View style="@style/Divider"/>
+
+                        <!-- ML Kit -->
+                        <LinearLayout android:id="@+id/btnMlKit" style="@style/LibRow">
+                            <LinearLayout style="@style/LibRowInner">
+                                <TextView style="@style/LibName" android:text="Google ML Kit 17.2.0" />
+                                <TextView style="@style/LibDesc" android:text="Détection et décodage de codes-barres — Apache 2.0" />
+                            </LinearLayout>
+                            <ImageView style="@style/LibArrow" />
+                        </LinearLayout>
+                        <View style="@style/Divider"/>
+
+                        <!-- Retrofit -->
+                        <LinearLayout android:id="@+id/btnRetrofit" style="@style/LibRow">
+                            <LinearLayout style="@style/LibRowInner">
+                                <TextView style="@style/LibName" android:text="Retrofit 2.9.0" />
+                                <TextView style="@style/LibDesc" android:text="Client HTTP pour les appels API REST — Apache 2.0" />
+                            </LinearLayout>
+                            <ImageView style="@style/LibArrow" />
+                        </LinearLayout>
+                        <View style="@style/Divider"/>
+
+                        <!-- OkHttp -->
+                        <LinearLayout android:id="@+id/btnOkHttp" style="@style/LibRow">
+                            <LinearLayout style="@style/LibRowInner">
+                                <TextView style="@style/LibName" android:text="OkHttp 4.11.0" />
+                                <TextView style="@style/LibDesc" android:text="Couche réseau HTTP / intercepteurs de logs — Apache 2.0" />
+                            </LinearLayout>
+                            <ImageView style="@style/LibArrow" />
+                        </LinearLayout>
+                        <View style="@style/Divider"/>
+
+                        <!-- Gson -->
+                        <LinearLayout android:id="@+id/btnGson" style="@style/LibRow">
+                            <LinearLayout style="@style/LibRowInner">
+                                <TextView style="@style/LibName" android:text="Gson (Google)" />
+                                <TextView style="@style/LibDesc" android:text="Sérialisation / désérialisation JSON — Apache 2.0" />
+                            </LinearLayout>
+                            <ImageView style="@style/LibArrow" />
+                        </LinearLayout>
+                        <View style="@style/Divider"/>
+
+                        <!-- Room -->
+                        <LinearLayout android:id="@+id/btnRoom" style="@style/LibRow">
+                            <LinearLayout style="@style/LibRowInner">
+                                <TextView style="@style/LibName" android:text="AndroidX Room 2.6.1" />
+                                <TextView style="@style/LibDesc" android:text="Persistance locale SQLite avec ORM — Apache 2.0" />
+                            </LinearLayout>
+                            <ImageView style="@style/LibArrow" />
+                        </LinearLayout>
+                        <View style="@style/Divider"/>
+
+                        <!-- Glide (no divider) -->
+                        <LinearLayout android:id="@+id/btnGlide" style="@style/LibRow">
+                            <LinearLayout style="@style/LibRowInner">
+                                <TextView style="@style/LibName" android:text="Glide 4.16.0" />
+                                <TextView style="@style/LibDesc" android:text="Chargement et mise en cache d'images — BSD / Apache 2.0" />
+                            </LinearLayout>
+                            <ImageView style="@style/LibArrow" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- ── DONNÉES ── -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            style="@style/SectionLabel"
+                            android:text="DONNÉES PRODUITS" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Les informations produits proviennent de la base de données collaborative Open Food Facts, disponible sous licence Open Database License (ODbL). Merci à tous les contributeurs !"
+                            android:textColor="@color/text_primary"
+                            android:textSize="13sp"
+                            android:lineSpacingMultiplier="1.5" />
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
