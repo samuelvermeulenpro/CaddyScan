@@ -33,6 +33,72 @@
             android:orientation="vertical"
             android:padding="16dp">
 
+            <!-- ── Image produit ── -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IMAGE"
+                android:textSize="11sp"
+                android:textColor="@color/text_secondary"
+                android:textAllCaps="true"
+                android:letterSpacing="0.1"
+                android:layout_marginBottom="8dp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <!-- Aperçu image -->
+                <ImageView
+                    android:id="@+id/ivImagePreview"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:background="@color/card_background"
+                    android:src="@drawable/ic_product_placeholder"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+                <!-- Boutons sélection -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp"
+                    app:layout_constraintStart_toEndOf="@id/ivImagePreview"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnTakePhoto"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:text="Prendre une photo"
+                        android:textSize="13sp"
+                        app:icon="@drawable/ic_camera"
+                        app:iconSize="18dp"
+                        app:backgroundTint="@color/primary" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnPickGallery"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Choisir depuis la galerie"
+                        android:textSize="13sp"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        app:strokeColor="@color/primary"
+                        android:textColor="@color/primary"
+                        app:icon="@drawable/ic_gallery"
+                        app:iconSize="18dp"
+                        app:tint="@color/primary" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
             <!-- Nom -->
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
